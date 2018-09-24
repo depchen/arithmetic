@@ -15,7 +15,7 @@ def HeapAdjust(input_list,parent,lenth):
 def heapsort(input_list):
     lenth=len(input_list)
     #创建初始堆
-    for i in range(int((lenth-2)/2)+1)[::-1]:
+    for i in range(int((lenth)/2))[::-1]:
         input_list=HeapAdjust(input_list,i,lenth-1)
     for i in range(1,lenth)[::-1]:
         temp=input_list[0]
